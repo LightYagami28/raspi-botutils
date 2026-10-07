@@ -1,2 +1,10 @@
 __pycache__
-
+*.py[cod]
+.venv/
+venv/
+.coverage
+coverage.xml
+*.log
+*.db
+*_error.txt
+test_report.txt

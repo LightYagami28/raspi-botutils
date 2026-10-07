@@ -59,3 +59,7 @@ sudo systemctl start raspi-botutils.service
 
 ## 🛡️ Security
 This bot runs as **ROOT** to perform system tasks. v3.0 enforces a strict **User Whitelist**. Commands from unknown User IDs are ignored/logged.
+Keep `ENABLE_SHELL_EXEC=false` unless shell execution is explicitly required.
+The supplied systemd unit enables `NoNewPrivileges`, `PrivateTmp`, `ProtectHome`,
+`ProtectSystem` and a restricted writable path to reduce the blast radius of a
+compromised dependency or bot token.
